@@ -1,0 +1,47 @@
+<html>
+<head>
+    <style>
+        .site > *{padding:50px; color:#fff; font-size:20px; background:#ccc;} 
+        .popup .text{ margin:auto; font-size:60px; font-family:arial;}
+        
+        .site{
+            display:grid;
+            grid-template-columns:2fr 1fr;
+
+            grid-template-areas:"header header"
+                                "title sidebar"
+                                "main sidebar"
+                                "footer footer";
+
+            grid-gap:10px; margin:20px; padding:10px; border:solid 2px #000;  
+        }
+
+        .mastheader {background:#b46ae3; grid-area:header; }
+        .page-title {background:#51a7fa; grid-area:title; }
+        .main-content {
+            background:#70bf40; grid-area:main;
+            min-height:500px;
+        }
+        .sidebar { background:#f49018; grid-area:sidebar; }
+        .footer { background:#0265c0; grid-area:footer; }
+
+        /* .popup{ grid-column: 1 / 3; grid-row: 1 / 5; background: red; opacity: 0.7; display: flex; } */
+        /* .popup{ grid-column: 1 / -1; grid-row: 1 / -1; background: red; opacity: 0.7; display: flex; } */
+        .popup{ grid-area: 1 / 1 / -1 / -1; background: red; opacity:0.7; display: flex; }
+        
+    </style>
+</head>
+<body>
+
+    <div class="site">
+        <header class="mastheader">.mastheader</header>
+        <div class="page-title">.page title</div>
+        <main class="main-content">.main content</main>
+        <aside class="sidebar">.sidebar</aside>
+        <footer class="footer">.footer</footer>
+        <section class="popup"><span class="text">popup</span></section>
+    </div>
+
+</body>
+
+</html>

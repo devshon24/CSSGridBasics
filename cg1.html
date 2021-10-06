@@ -1,0 +1,36 @@
+<html>
+<head>
+    <style>
+        .site > *{padding:50px; color:#fff; font-size:20px; background:#ccc;} 
+
+
+        .site {
+             /* create grid; */
+             
+            /* display:grid; */
+            grid-template-columns:2fr 1fr 1fr;
+            /* grid-template-columns: repeat(4, 1fr); */
+            grid-gap: 10px;
+        }
+
+        .mastheader{background:#b46ae3;}
+        .page-title{background:#51a7fa;}
+        .main-content{background:#70bf40;}
+        .sidebar{background:#f49018;}
+        .footer{background:#0265c0;}
+
+    </style>
+</head>
+<body>
+
+    <div class="site">
+        <header class="mastheader">.mastheader</header>
+        <div class="page-title">.page-title</div>
+        <main class="main-content">.main-content</main>
+        <aside class="sidebar">.sidebar</aside>
+        <footer class="footer">.footer</footer>
+    </div>
+
+</body>
+
+</html>

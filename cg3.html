@@ -1,0 +1,45 @@
+<html>
+<head>
+    <style>
+        .site > *{padding:50px; color:#fff; font-size:20px; background:#ccc;} 
+
+
+        .site{  
+            display:grid;
+            grid-template-columns:2fr 1fr 1fr;
+            grid-template-rows:1fr 2fr 2fr;
+            grid-gap:10px;
+            
+            
+            margin:30px;
+            }
+            .site > *{
+            padding:30px; color:#fff; font-size:20px; background:#888;
+            }
+
+            .sidebar{
+                background:#b46ae3;
+                grid-column:2/4;
+                grid-row:2/3;
+            }
+
+    </style>
+</head>
+<body>
+
+    <div class="site">
+        <header class="mastheader">main header</header>
+        <div class="page-title">page title</div>
+        <main class="main-content">main content</main>
+        <aside class="sidebar">sidebar</aside>
+        <footer class="footer">main footer</footer>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<head>
+    <style>
+
+        .site {
+            /*create grid*/
+            display: grid;
+            grid-template-rows: auto 1fr 3fr; 
+        }
+        .site > *{padding:50px; color:#fff; font-size:20px; background:#ccc;}
+        .mastheader{background:#b46ae3;}
+        .page-title{background:#51a7fa;}
+        .main-content{background:#70bf40;}
+        .sidebar{background:#f49018;}
+        .footer{background:#0265c0;}
+
+    </style>
+</head>
+<body>
+    <div class="site">
+        <header class="mastheader">.mastheader</header>
+        <h1 class="page-title">.page-title</h1>
+        <main class="main-content">.main-content</main>
+        <aside class="sidebar">.sidebar</aside>
+        <footer class="footer">.footer</footer>
+        <h1 class=”page-title”>.page-title</h1>
+        <aside class="sidebar">.sidebar</aside> 
+    </div>
+
+</body>
+
